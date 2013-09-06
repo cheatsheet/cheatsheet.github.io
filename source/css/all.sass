@@ -13,14 +13,13 @@ $small: "only screen and (max-width:940px)"
 @import "_blog"
 
 body
-  background: #160A00
+  background: $base-color
   font-family: MuseoSans,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック",sans-serif
   color: $text
-  font-size: 14px 
-  text-align: center
+  font-size: 14px
 
 #layout
-  padding-left: 25%
+  padding-left: 20%
   position: relative
   @media #{$small}
     padding-left: 0
@@ -35,8 +34,8 @@ body
   position: fixed
   top: 0
   bottom: 0
-  width: 25%
-  margin-left: -25%
+  width: 15%
+  margin-left: -15%
   z-index: 10
   @media #{$small}
     width: 100% 
@@ -51,7 +50,6 @@ body.index
     background-color: $white
     text-align: left
     line-height: 1.8em 
-    background: url(../images/index-bg.png) top right no-repeat
     -webkit-background-size: 100% 
     -o-background-size: 100% 
     background-size: 100% 
